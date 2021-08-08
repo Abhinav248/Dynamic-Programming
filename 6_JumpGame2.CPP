@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/jump-game-ii/
+// https://www.youtube.com/watch?v=cETfFsSTGJI
 
 #include<iostream>
 #include<vector>
