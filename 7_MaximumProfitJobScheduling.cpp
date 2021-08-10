@@ -21,6 +21,7 @@ public:
                 }
             }
         }
+        //Minimum profit for each job is considered below.
         dp = profit;
         int maxm=dp[0];
         for(int i=1;i<len;i++){
