@@ -32,9 +32,8 @@ int RodCuttingMaximumProfit (vector<int> profit, int len) {
 }
 
 int main() {
-    vector<int> nums = {2,5,7,8};
-    cout<<RodCuttingMaximumProfit(nums, 5);
+    vector<int> profit1 = {2,5,7,8};
+    vector<int> profit2 = {1,5,8,9,10,17,17,20};
+    cout<<RodCuttingMaximumProfit(profit1, 9);
     return 0;
 }
-
-
