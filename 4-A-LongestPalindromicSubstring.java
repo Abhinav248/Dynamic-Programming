@@ -2,6 +2,34 @@
 
 class Solution {
     public String longestPalindrome(String s) {
+        
+        int l=s.length();
+        boolean[][] dp=new boolean[l][l];
+        int max=0;
+        String longestSubstring="";
+        
+        for(int d=0;d<l;d++){
+            for(int i=0, j=d; j<l; i++, j++){
+                if(
+                  (d==0) ||                                                     // length=1 or (i==j) i.e diagonal
+                  (d==1 && s.charAt(i)==s.charAt(j)) ||                         // length=2 or j==i+1
+                  (d>=2 && dp[i+1][j-1] && s.charAt(i)==s.charAt(j))            // length>2 or j>=i+2
+                  ) {
+                    dp[i][j]=true;
+                    if(j-i+1>max){
+                        max=j-i+1;
+                        longestSubstring=s.substring(i,j+1);
+                    }
+                }
+            }
+        }
+        
+        return longestSubstring;
+    }
+}
+
+/*class Solution {
+    public String longestPalindrome(String s) {
         int n=s.length();
         boolean[][] dp = new boolean[n][n];
         int max=0;
@@ -26,3 +54,4 @@ class Solution {
         return res;
     }
 }
+*/
