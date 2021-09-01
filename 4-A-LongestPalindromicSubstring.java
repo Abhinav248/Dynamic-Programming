@@ -20,6 +20,7 @@ class Solution {
                         max=j-i+1;
                         longestSubstring=s.substring(i,j+1);
                     }
+                    //System.out.println(s.substring(i,j+1));                     // Prints all palindromic substring
                 }
             }
         }
