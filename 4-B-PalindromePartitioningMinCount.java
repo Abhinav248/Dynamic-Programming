@@ -6,8 +6,6 @@ class Solution {
         int l=s.length();
         boolean[][] dp=new boolean[l][l];
         int[][] count_dp=new int[l][l];
-        int max=0;
-        String longestSubstring="";
         
         for(int d=0;d<l;d++) {
             for(int i=0, j=d; j<l; i++, j++) {
