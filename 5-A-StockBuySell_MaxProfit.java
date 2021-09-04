@@ -1,4 +1,4 @@
-// Related Problemin C++:
+// Related Problem in C++:
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 // Approach 1: Time Limit Succeeded
