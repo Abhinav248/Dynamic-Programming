@@ -23,3 +23,7 @@ class Solution {
         return maxp;
     }
 }
+
+/* Similar Problems:
+1. Minimum Product Subarray
+*/
