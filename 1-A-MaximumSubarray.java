@@ -29,6 +29,8 @@ class Solution {
 }
 
 /* Similar Problems:
-1. Minimum Sum Subarray
+1. Maximum Sum Subarray Elements
+2. Minimum Sum Subarray
+3. Minimum Sum Subarray Elements
 */
 
