@@ -26,7 +26,7 @@ class Solution {
 
 /* Similar Problems:
 1. Maximum Product Subarray Elements
-2. Minimum Product Subarray
+2. Minimum Product Subarray Length
 3. Minimum Product Subarray Elements
 */
 
