@@ -56,3 +56,10 @@ int main() {
     }
     return 0;
 }
+
+/* Similar Problems:
+1. Maximum Sum Decreasing Subsequence
+2. Minimum Sum Increasing Subsequence
+3. Minimum Sum Decreasing Subsequence
+*/
+
