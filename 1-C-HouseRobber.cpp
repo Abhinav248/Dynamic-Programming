@@ -46,3 +46,7 @@ class Solution {
     }
 }
 */
+
+/* Similar Problems:
+1. Minimum Non-Adjacent Sum
+*/
