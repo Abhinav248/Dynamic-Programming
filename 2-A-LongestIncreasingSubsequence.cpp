@@ -36,6 +36,8 @@ public:
 };
 
 /* Similar Problems:
-1. Longest Decreasing Subsequence
+1. Longest Increasing Subsequence Elements
+2. Longest Decreasing Subsequence Length
+3. Longest Decreasing Subsequence Elements
 */
 
