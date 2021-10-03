@@ -29,6 +29,6 @@ class Solution {
 }
 
 /* Similar Problems:
-1. Minimum Sub Array
+1. Minimum Sum Subarray
 */
 
