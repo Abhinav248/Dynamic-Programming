@@ -30,7 +30,7 @@ class Solution {
 
 /* Similar Problems:
 1. Maximum Sum Subarray Elements
-2. Minimum Sum Subarray
+2. Minimum Sum Subarray Length
 3. Minimum Sum Subarray Elements
 */
 
