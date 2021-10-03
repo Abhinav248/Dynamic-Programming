@@ -48,6 +48,8 @@ class Solution {
 */
 
 /* Similar Problems:
-1. Minimum Non-Adjacent Sum
+1. Maximum Non-Adjacent Sum Elements
+2. Minimum Non-Adjacent Sum
+3. Minimum Non-Adjacent Sum Elements
 */
 
