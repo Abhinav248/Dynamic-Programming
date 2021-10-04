@@ -23,3 +23,10 @@ class Solution {
         return maxLen;
     }
 }
+
+/* Similar Problems:
+1. Longest Arithmetic Progression Elements
+2. Longest Geometric Progression
+3. Longest Geometric Progression Elements
+*/
+
