@@ -24,9 +24,9 @@ public:
 };
 
 /* Similar Problems:
-1. Maximum Jump Count To Reach End
-2. Maximum Jump Path To Reach End
-3. Minimum Jump Count To Reach End
-4. Minimum Jump Path To Reach End
+1. Maximum Jump Length To Reach End
+2. Maximum Jump Elements To Reach End
+3. Minimum Jump Length To Reach End
+4. Minimum Jump Elements To Reach End
 */
 
