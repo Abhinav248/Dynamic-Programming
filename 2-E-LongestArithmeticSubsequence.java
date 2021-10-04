@@ -25,8 +25,8 @@ class Solution {
 }
 
 /* Similar Problems:
-1. Longest Arithmetic Progression Elements
-2. Longest Geometric Progression
-3. Longest Geometric Progression Elements
+1. Longest Arithmetic Subsequence Elements
+2. Longest Geometric Subsequence Length
+3. Longest Geometric Subsequence Elements
 */
 
