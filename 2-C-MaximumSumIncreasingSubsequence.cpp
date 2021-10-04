@@ -58,11 +58,11 @@ int main() {
 }
 
 /* Similar Problems:
-1. Maximum Sum Count Decreasing Subsequence
-2. Maximum Sum Path Decreasing Subsequence
+1. Maximum Sum Decreasing Subsequence
+2. Maximum Sum Decreasing Subsequence Elements
 3. Minimum Sum Count Increasing Subsequence
-4. Minimum Sum Path Increasing Subsequence
+4. Minimum Sum Increasing Subsequence Elements
 5. Minimum Sum Count Decreasing Subsequence
-6. Minimum Sum Path Decreasing Subsequence
+6. Minimum Sum Decreasing Subsequence Elements
 */
 
