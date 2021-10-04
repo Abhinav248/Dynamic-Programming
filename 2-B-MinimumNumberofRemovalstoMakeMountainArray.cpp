@@ -41,6 +41,7 @@ public:
 };
 
 /* Similar Problems:
-1. Longest Bitonic Subsequence
+1. Longest Bitonic Subsequence Length
+2. Longest Bitonic Subsequence Elements
 */
 
