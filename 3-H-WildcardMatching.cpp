@@ -29,6 +29,8 @@ public:
                 if(j==0)
                     dp[i][j]= false;
                 else{
+                    // Either each to each character matching in pattern and string or 
+                    // pattern has '?' which can go with anyone character in string
                     if(s.at(i-1)==p.at(j-1) || p.at(j-1)=='?')
                         dp[i][j] = dp[i-1][j-1];
                     else if(p.at(j-1)=='*')
