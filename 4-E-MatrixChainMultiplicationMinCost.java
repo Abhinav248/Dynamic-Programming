@@ -7,11 +7,13 @@ public class Solution {
     public static int MatrixChainMultiplicationMinCost(int[] cost) {
         int len=cost.length;
         if(len<2) return 0;
-        int[][] cost_dp=new int[len][len];
+        int[][] cost_dp=new int[len][len]; // dp[i][0]=0 , dp[0][j]=0 & diagnonal elements = 0 as well as no cost to multiply with its own.
         for(int d=1;d<len-1;d++) {
             for(int i=1;i<len-d;i++) {
                 int j=i+d, min=Integer.MAX_VALUE;
-                // We iterate through each possible combination of evaluation via i<=k<j and get the minm value of cost to cost_dp[i][j] 
+                // We iterate through each possible combination of evaluation via i<=k<j and get the minm value of cost to cost_dp[i][j]
+                // i.e. say for multiplying A1, A2 & A3, we take minm of A1.(A2.A3) and (A1.A2).A3, 
+                // i.e. All possible combination of multiplication order ut we consider minimum of all these multiplication order.
                 for(int k=i;k<j;k++){                        // Considering the combination: A1.(A2.A3), below:
                     int temp_cost=cost_dp[i][k]   +          // Cost of not multiplying A1 = cost_dp[1][1] = 0
                                   cost_dp[k+1][j] +          // Cost of multiplying A2.A3 = cost_dp[2][3] = 4*6*2 = 48
@@ -26,6 +28,7 @@ public class Solution {
 
     public static void main(String[] args) {
         int[] cost1={5, 4, 6, 2, 7};
+        // matrix are 5x4 4x6 6x2 2x7
         int[] cost2={40, 20, 30, 10, 30};
         int[] cost3={10, 20, 30, 40, 30};
         int[] cost4={10, 20, 30};
