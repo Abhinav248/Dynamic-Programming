@@ -26,10 +26,10 @@ public class Solution {
                 int right_points=score[j]+dp[i][j-1][1];    // Choosing from right end: score[j]
                 if (left_points>right_points) {
                     dp[i][j][0]=left_points;
-                    dp[i][j][1]=dp[i+1][j][0];
+                    dp[i][j][1]=dp[i+1][j][0]; // Since leftmost value is selected by player 1 so player 2 will select remaining best value from i+1 to jth index. 
                 } else {
                     dp[i][j][0]=right_points;
-                    dp[i][j][1]=dp[i][j-1][0];
+                    dp[i][j][1]=dp[i][j-1][0]; // Since rightmost value is selected by player 1 so player 2 will select remaining best value from i to (j-1)th index.
                 }
             }
         }
