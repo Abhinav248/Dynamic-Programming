@@ -12,8 +12,8 @@ class Solution {
         mnp[0]=a[0];
         //mnpi[0]=0;
         for(int i=1;i<l;i++){
-            mpp[i]=Math.max(a[i],Math.max(a[i]*mpp[i-1], a[i]*mnp[i-1]));
-            mnp[i]=Math.min(a[i],Math.min(a[i]*mpp[i-1], a[i]*mnp[i-1]));
+            mpp[i]=Math.max(a[i], Math.max(a[i]*mpp[i-1], a[i]*mnp[i-1]));
+            mnp[i]=Math.min(a[i], Math.min(a[i]*mpp[i-1], a[i]*mnp[i-1]));
         }
         int maxp=mpp[0];
         for(int i=1;i<l;i++){
