@@ -1,6 +1,21 @@
 // https://leetcode.com/problems/house-robber/
 // https://www.youtube.com/watch?v=UtGtF6nc35g
 
+class Solution {
+    public int rob(int[] nums) {
+        int l=nums.length;
+        int inclusive = 0;
+        int exclusive = 0;
+        for(int i=0; i<l; i++) {
+            int temp = inclusive;
+            inclusive = Math.max(nums[i]+exclusive, inclusive);
+            exclusive = temp;
+        }
+        return Math.max(inclusive, exclusive);
+    }
+}
+
+/*
 #include<algorithm>
 #include<vector>
 
@@ -25,6 +40,7 @@ public:
         return maxm;
     }
 };
+*/
 
 /*
 // Java Solution
