@@ -1,6 +1,26 @@
 // https://leetcode.com/problems/maximum-subarray/
 
 class Solution {
+    public int maxSubArray(int[] n) {
+        int l=n.length;
+        int[] dpSumIncludingCurrentElement = new int[l];
+        dpSumIncludingCurrentElement[0] = n[0];
+        int maxSumSubArray = dpSumIncludingCurrentElement[0];
+        for(int i=1; i<l; i++) {
+            if(dpSumIncludingCurrentElement[i-1]>0){
+                dpSumIncludingCurrentElement[i] = dpSumIncludingCurrentElement[i-1] + n[i]; 
+            } else {
+                dpSumIncludingCurrentElement[i] = n[i];
+            }
+            maxSumSubArray = Math.max(maxSumSubArray, dpSumIncludingCurrentElement[i]);
+        }
+        return maxSumSubArray;
+    }
+}
+
+
+/*
+class Solution {
     public int maxSubArray(int[] a) {
         int l=a.length;
         int[] s=new int[l];
@@ -27,6 +47,7 @@ class Solution {
         return maxsum;
     }
 }
+*/
 
 /* Similar Problems:
 1. Maximum Sum Subarray Elements
