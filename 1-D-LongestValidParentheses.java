@@ -14,7 +14,8 @@ class Solution {
                     v[i]+=v[i-2];
                 }
             }
-            else if(s.charAt(i-1)==')' && (i-v[i-1]-1 >= 0) && s.charAt(i-v[i-1]-1)=='('){
+            else if(s.charAt(i-1)==')' 
+                    && (i-v[i-1]-1 >= 0) && s.charAt(i-v[i-1]-1)=='('){
                 v[i]=v[i-1] + 2;
                 if((i-v[i-1]-2) >= 0){
                     v[i]+=v[i-v[i-1]-2];
